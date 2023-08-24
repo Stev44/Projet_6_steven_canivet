@@ -484,7 +484,7 @@ function loadImage(images) {
                 })
                 .then(function(response) {
                     if (response.ok) {
-                        recupererTravail()
+                        takeWorks()
                             .then(donnees => loadImage(donnees));
                     }
                 });
