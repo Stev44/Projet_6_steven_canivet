@@ -1,0 +1,3 @@
+liens du code : https://github.com/Stev44/Projet_6_steven_canivet.git
+
+Je n'ai pas pu déployer mon site sur gitHub, il y a une erreur avec "Jekyll" et je ne sais pas comment résoudre le problème.

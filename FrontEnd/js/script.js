@@ -60,13 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const btn3 = document.getElementById('btn-3')
         btn3.classList.remove('hideButton');
        console.log("sucessfully");
- 
-       document.getElementById("login").innerHTML = "logout";
 
        const modalContainer = document.createElement('div');
        modalCreation(modalContainer);
        
-       let btnLogout = document.getElementById("login");
+       let btnLogout = document.getElementById("login").innerHTML = "logout";
        btnLogout.addEventListener("click", function() {
           clearSessionStorage();
        })
