@@ -191,14 +191,7 @@ function modalCreation() {
 
     function deleteAll() {
 
-        fetch('http://localhost:5678/api/works', {
-                headers: {
-                    Authorization: 'Bearer ' + sessionStorage.getItem("token")
-                }
-            })
-            .then(response => {
-                return response.json();
-            })
+       takeWorks()
             .then(data => {
                 data.forEach(item => {
                     fetch('http://localhost:5678/api/works/' + item.id, {
