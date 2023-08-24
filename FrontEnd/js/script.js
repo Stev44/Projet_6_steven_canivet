@@ -62,11 +62,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
        const modalContainer = document.createElement('div');
        modalCreation(modalContainer);
+
+       console.log('connecté');
        
        let btnLogout = document.getElementById("login").innerHTML = "logout";
-       btnLogout.addEventListener("click", function() {
-          clearSessionStorage();
-       })
+       
     }
  });
  
