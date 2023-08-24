@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
        
        let btnLogout = document.getElementById("login").innerHTML = "logout";
        
+    } else {
+        console.log('déconnecté');
     }
  });
  
@@ -154,7 +156,7 @@ function modalCreation() {
         const modalFirst = document.querySelector(".modalContainer");
         modalFirst.classList.remove("active");
         takeWorks()
-            .then(donnees => afficherImages(donnees));
+            .then(donnees => showImages(donnees));
     });
 
     window.addEventListener('click', (event) => {
