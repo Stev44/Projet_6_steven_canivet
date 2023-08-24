@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const btn3 = document.getElementById('btn-3')
         btn3.classList.remove('hideButton');
-       console.log("sucessfully");
 
        const modalContainer = document.createElement('div');
        modalCreation(modalContainer);
