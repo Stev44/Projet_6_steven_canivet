@@ -482,12 +482,6 @@ function loadImage(images) {
                         'Authorization': `Bearer ${token}`
                     }
                 })
-                .then(function(response) {
-                    if (response.ok) {
-                        takeWorks()
-                            .then(donnees => loadImage(donnees));
-                    }
-                });
         }
     });
 }
