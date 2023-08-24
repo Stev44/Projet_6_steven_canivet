@@ -208,9 +208,6 @@ function modalCreation() {
                             }
                         })
                 });
-                takeWorks().then(données => {
-                    loadImage(données);
-                });
             })
     }
     
